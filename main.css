@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #f76c85;
+    --clr-main: #094047;
     --clr-main-light: #000000;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
@@ -435,7 +435,7 @@ main {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .contenedor-productos {
         grid-template-columns: 1fr;
     }
@@ -464,6 +464,27 @@ nav::-webkit-scrollbar-thumb:hover {
 nav::-webkit-scrollbar-track {
     background: var(--clr-gray); /* Fondo de la pista del scroll */
 }
+.scroll-top-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
 
+.scroll-top-btn:hover {
+    background-color: #ff4081;
+}
 
 
